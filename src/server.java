@@ -43,7 +43,7 @@ public class Server {
     		server.server = new ServerSocket(PORT);
     		System.out.println("Server is created");
     		System.out.println(
-    				"Server address is " + server.getIP() + ":" + PORT);
+    				"Server address is [" + server.getIP() + ":" + PORT + "]");
     		htmlDoc = htmlDoc.replaceAll("ipaddress", server.getIP());
     		
     		while (LocalTime.now().getMinute() != server.time) {
