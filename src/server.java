@@ -76,7 +76,7 @@ public class Server {
     	}
     }
     
-    public String setRestaurant(String restaurant) {
+    public String setRestaurant(String restaurant) {//음식점 정보를 얻어옴
     	BufferedReader menureader = null;
     	BufferedReader reader = null;
     	StringBuilder change = new StringBuilder();
@@ -128,7 +128,7 @@ public class Server {
     	return result;
     }
     
-    public String getIP() throws Exception {
+    public String getIP() throws Exception { //서버의 IP주소를 얻어옴
     	String command = "ipconfig";
 		Process process = Runtime.getRuntime().exec(command);
 		ipReader = new BufferedReader(
